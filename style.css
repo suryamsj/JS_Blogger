@@ -1,0 +1,743 @@
+.swing, html .container .girl.dance, body .container .girl.dance, html .container .boy.dance, body .container .boy.dance {
+    animation: 1.5s float ease-in-out alternate infinite;
+}
+html, body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    over-flow: hidden;
+}
+html .container, body .container {
+    background-color: #ff8c94;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+html .container .cake, body .container .cake {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+    left: -135px;
+    z-index: 101;
+}
+html .container .cake .candle, body .container .cake .candle {
+    position: relative;
+    height: 20px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 10;
+}
+html .container .cake #flame, body .container .cake #flame {
+    position: absolute;
+    z-index: 10;
+}
+html .container .cake .lit, body .container .cake .lit {
+    background-color: #ffc950;
+    width: 5px;
+    height: 12px;
+    filter: blur(1px);
+   /* Info on border radius. http://www.css3.info/preview/rounded-border/ */
+    border-top-left-radius: 10px 35px;
+    border-top-right-radius: 10px 35px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    top: -15px;
+    margin: auto;
+    box-shadow: 0 0 17px 7px rgba(244, 231, 112, 0.71);
+    transform-origin: bottom;
+    animation: flicker 1s ease-in-out alternate infinite;
+}
+html .container .cake .off, body .container .cake .off {
+    display: none;
+}
+html .container .cake #layer1, body .container .cake #layer1 {
+    width: 50px;
+    height: 20px;
+    background-color: #715447;
+}
+html .container .cake #layer2, body .container .cake #layer2 {
+    height: 10px;
+    width: 100px;
+    background-color: #ddd;
+}
+html .container .girl, body .container .girl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+    left: 0px;
+}
+html .container .girl .hair, body .container .girl .hair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #424b54;
+    border-top-left-radius: 120% 200%;
+    border-top-right-radius: 120% 200%;
+    z-index: 2;
+    position: relative;
+    top: 25px;
+}
+html .container .girl .face, body .container .girl .face {
+    background-color: #fed9a5;
+    width: 40px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    top: -35px;
+    z-index: 3;
+}
+html .container .girl .eye-brows, body .container .girl .eye-brows {
+    position: relative;
+    top: -80px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    width: 30px;
+}
+html .container .girl .eye-brows .brow, body .container .girl .eye-brows .brow {
+    width: 8px;
+    height: 2px;
+    background-color: #000;
+}
+html .container .girl .eye-brows #left-brow, body .container .girl .eye-brows #left-brow {
+    border-top-left-radius: 100%;
+}
+html .container .girl .eye-brows #right-brow, body .container .girl .eye-brows #right-brow {
+    border-top-right-radius: 100%;
+}
+html .container .girl .ears, body .container .girl .ears {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 10;
+    height: 2px;
+    position: relative;
+    top: -20px;
+}
+html .container .girl .ears .ear.left, body .container .girl .ears .ear.left {
+    width: 10px;
+    height: 15px;
+    background-color: #fed9a5;
+    position: relative;
+    left: -17px;
+    top: 7px;
+    border-radius: 100%;
+}
+html .container .girl .ears .ear.left .ring, body .container .girl .ears .ear.left .ring {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    position: relative;
+    top: 11px;
+    left: 2px;
+    border-radius: 100%;
+}
+html .container .girl .ears .ear.right, body .container .girl .ears .ear.right {
+    width: 10px;
+    height: 15px;
+    background-color: red;
+    background-color: #fed9a5;
+    position: relative;
+    left: 17px;
+    top: 7px;
+    z-index: -1;
+    border-radius: 100%;
+}
+html .container .girl .ears .ear.right .ring, body .container .girl .ears .ear.right .ring {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    position: relative;
+    top: 11px;
+    left: 3px;
+    border-radius: 100%;
+}
+html .container .girl .eyes, body .container .girl .eyes {
+    display: flex;
+    justify-content: space-around;
+    width: 30px;
+    position: relative;
+    top: -35px;
+}
+html .container .girl .eyes .eye, body .container .girl .eyes .eye {
+    width: 6px;
+    height: 6px;
+    top: -43px;
+    border-radius: 100%;
+    background-color: #fff;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html .container .girl .eyes .eye .eye-ball, body .container .girl .eyes .eye .eye-ball {
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    background-color: #000;
+}
+html .container .girl .mouth, body .container .girl .mouth {
+    width: 15px;
+    height: 7px;
+    background-color: #d51462;
+    z-index: 100;
+    position: relative;
+    top: -65px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html .container .girl .mouth .teeth, body .container .girl .mouth .teeth {
+    height: 5px;
+    min-width: 13px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    position: relative;
+    left: 8px;
+    border: 2px solid #d51462;
+    z-index: 1;
+}
+html .container .girl .mouth .blow, body .container .girl .mouth .blow {
+    height: 8px;
+    background-color: #424b54;
+    position: relative;
+    left: -8px;
+    min-width: 10px;
+    border-radius: 100%;
+    border: 3px solid #d51462;
+    visibility: hidden;
+}
+html .container .girl .neck, body .container .girl .neck {
+    background-color: #fed9a5;
+    width: 15px;
+    height: 25px;
+    z-index: 3;
+    position: relative;
+    top: -55px;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .girl .body, body .container .girl .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html .container .girl .body .shirt, body .container .girl .body .shirt {
+    width: 90px;
+    height: 110px;
+    background-color: #d51462;
+    position: relative;
+    top: -85px;
+    border-top-left-radius: 120% 100%;
+    border-top-right-radius: 120% 100%;
+    display: flex;
+    justify-content: space-between;
+}
+html .container .girl .body .hands, body .container .girl .body .hands {
+    display: flex;
+    position: relative;
+    top: -20px;
+    z-index: 101;
+}
+html .container .girl .body .hands .palm, body .container .girl .body .hands .palm {
+    width: 20px;
+    height: 20px;
+    background-color: #fed9a5;
+    border-radius: 100%;
+}
+html .container .girl .body .hands #left_hand, body .container .girl .body .hands #left_hand {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: #8f0d42;
+    top: 0px;
+    left: 0px;
+    transform: rotate(67deg);
+    border-top-left-radius: 120% 100%;
+    border-bottom-left-radius: 120% 100%;
+}
+html .container .girl .body .hands #left_hand #left_palm, body .container .girl .body .hands #left_hand #left_palm {
+    position: relative;
+    left: 95px;
+}
+html .container .girl .body .hands #right_hand, body .container .girl .body .hands #right_hand {
+    position: relative;
+    width: 100px;
+    height: 20px;
+    background-color: #8f0d42;
+    left: 0px;
+    top: 0px;
+    transform: rotate(-67deg);
+    z-index: 100;
+    border-top-right-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .girl .body .hands #right_hand #right_palm, body .container .girl .body .hands #right_hand #right_palm {
+    position: relative;
+    left: -15px;
+}
+html .container .girl .body .jeans, body .container .girl .body .jeans {
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    z-index: 100;
+    position: relative;
+    top: -85px;
+    display: flex;
+    justify-content: space-between;
+}
+html .container .girl .body .jeans .legs, body .container .girl .body .jeans .legs {
+    width: 40px;
+    height: 90px;
+    background-color: #ddd;
+    position: relative;
+    top: 30px;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .girl .body .jeans #gap, body .container .girl .body .jeans #gap {
+    height: 5px;
+    width: 10px;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .girl .body .foot, body .container .girl .body .foot {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    position: relative;
+    top: -5px;
+}
+html .container .girl .body .foot .shoes, body .container .girl .body .foot .shoes {
+    width: 30px;
+    height: 40px;
+    background-color: #d51462;
+    position: relative;
+    z-index: 300;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .boy, body .container .boy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: -15px;
+    top: -600px;
+    -webkit-transition: top 2s ease;
+   /* Safari */
+    transition: top 2s ease;
+   /*End of body*/
+}
+html .container .boy .head, body .container .boy .head {
+    height: 80px;
+    width: 60px;
+    position: relative;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+html .container .boy .head .hair, body .container .boy .head .hair {
+    width: 40px;
+    height: 55px;
+    position: absolute;
+    background-color: #424b54;
+    border-top-left-radius: 150% 70%;
+    border-top-right-radius: 150% 70%;
+    border-bottom-left-radius: 150% 170%;
+    border-bottom-right-radius: 150% 170%;
+    z-index: 2;
+}
+html .container .boy .head .fringe, body .container .boy .head .fringe {
+    width: 40px;
+    height: 20px;
+    z-index: 99;
+    position: relative;
+    top: 4px;
+    border-radius: 100% 0 100% 100%;
+    background-color: #424b54;
+}
+html .container .boy .head .face, body .container .boy .head .face {
+    background-color: #fed9a5;
+    width: 55%;
+    height: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: -7px;
+    z-index: 3;
+    display: flex;
+}
+html .container .boy .head .eye-brows, body .container .boy .head .eye-brows {
+    position: relative;
+    top: -43px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    width: 30px;
+}
+html .container .boy .head .eye-brows .brow, body .container .boy .head .eye-brows .brow {
+    width: 8px;
+    height: 2px;
+    background-color: #000;
+}
+html .container .boy .head .eye-brows #left-brow, body .container .boy .head .eye-brows #left-brow {
+    border-top-left-radius: 100%;
+}
+html .container .boy .head .eye-brows #right-brow, body .container .boy .head .eye-brows #right-brow {
+    border-top-right-radius: 100%;
+}
+html .container .boy .head .eyes, body .container .boy .head .eyes {
+    display: flex;
+    justify-content: space-around;
+    width: 30px;
+}
+html .container .boy .head .eyes .eye, body .container .boy .head .eyes .eye {
+    width: 6px;
+    height: 6px;
+    top: -40px;
+    border-radius: 100%;
+    background-color: #fff;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+html .container .boy .head .eyes .eye .eye-ball, body .container .boy .head .eyes .eye .eye-ball {
+    width: 3px;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #000;
+}
+html .container .boy .head .ears, body .container .boy .head .ears {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 10;
+    height: 2px;
+}
+html .container .boy .head .ears .ear.left, body .container .boy .head .ears .ear.left {
+    width: 10px;
+    height: 15px;
+    background-color: #fed9a5;
+    position: relative;
+    left: -9px;
+    top: 7px;
+    border-radius: 100%;
+}
+html .container .boy .head .ears .ear.right, body .container .boy .head .ears .ear.right {
+    width: 10px;
+    height: 15px;
+    background-color: red;
+    background-color: #fed9a5;
+    position: relative;
+    left: 9px;
+    top: 7px;
+    z-index: -1;
+    border-radius: 100%;
+}
+html .container .boy .head .mouth, body .container .boy .head .mouth {
+    width: 15px;
+    height: 7px;
+    position: relative;
+    background-color: #fff;
+    z-index: 150;
+    top: -30px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+html .container .boy .neck, body .container .boy .neck {
+    background-color: #fed9a5;
+    width: 15px;
+    height: 35px;
+    z-index: 3;
+    position: relative;
+    top: -20px;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .boy .body, body .container .boy .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html .container .boy .body .shirt, body .container .boy .body .shirt {
+    width: 90px;
+    height: 120px;
+    background-color: #40beb0;
+    position: relative;
+    top: -40px;
+    border-top-left-radius: 120% 100%;
+    border-top-right-radius: 120% 100%;
+    display: flex;
+    justify-content: space-between;
+}
+html .container .boy .body .shirt .sleeves, body .container .boy .body .shirt .sleeves {
+    width: 20px;
+    height: 120px;
+    background-color: #2e8a80;
+    z-index: 110;
+}
+html .container .boy .body .shirt .hand, body .container .boy .body .shirt .hand {
+    background-color: #fed9a5;
+    z-index: 103;
+}
+html .container .boy .body .shirt #left-hand, body .container .boy .body .shirt #left-hand {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    left: -45px;
+    top: 55px;
+    transform: rotate(-67deg);
+}
+html .container .boy .body .shirt #left-fore-hand, body .container .boy .body .shirt #left-fore-hand {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    left: -60px;
+    top: 75px;
+    border-bottom-left-radius: 50%;
+}
+html .container .boy .body .shirt #left-palm, body .container .boy .body .shirt #left-palm {
+    position: absolute;
+    height: 18px;
+    width: 36px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    top: 76px;
+    left: -95px;
+    background-color: #ebc898;
+}
+html .container .boy .body .shirt #left-sleeve, body .container .boy .body .shirt #left-sleeve {
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    width: 60px;
+    height: 30px;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 40%;
+    transform: rotate(-67deg);
+}
+html .container .boy .body .shirt #right-hand, body .container .boy .body .shirt #right-hand {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    left: 70px;
+    top: 35px;
+    z-index: 1;
+    transform: rotate(47deg);
+}
+html .container .boy .body .shirt #right-fore-hand, body .container .boy .body .shirt #right-fore-hand {
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    left: 112px;
+    top: 53px;
+    z-index: 1;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    transform: rotate(-47deg);
+    z-index: 10;
+}
+html .container .boy .body .shirt #right-palm, body .container .boy .body .shirt #right-palm {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 100%;
+    top: 25px;
+    left: 150px;
+    z-index: 10;
+    background-color: #ebc898;
+}
+html .container .boy .body .shirt #right-sleeve, body .container .boy .body .shirt #right-sleeve {
+    position: absolute;
+    left: 55px;
+    top: 15px;
+    width: 60px;
+    height: 30px;
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 40%;
+    transform: rotate(47deg);
+}
+html .container .boy .body .shirt .balloons, body .container .boy .body .shirt .balloons {
+    width: 200px;
+    height: 150px;
+    left: 60px;
+    top: -200px;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+}
+html .container .boy .body .shirt .balloons .balloon, body .container .boy .body .shirt .balloons .balloon {
+    border-radius: 100%;
+    min-width: 50px;
+    height: 75px;
+    position: relative;
+    opacity: 0.98;
+    box-shadow: inset 0px 2px 2px #ccc;
+}
+html .container .boy .body .shirt .balloons .balloon.pink, body .container .boy .body .shirt .balloons .balloon.pink {
+    background-color: #d51462;
+}
+html .container .boy .body .shirt .balloons .balloon.green, body .container .boy .body .shirt .balloons .balloon.green {
+    background-color: #f0f1ea;
+}
+html .container .boy .body .shirt .balloons #one, body .container .boy .body .shirt .balloons #one {
+    top: 20px;
+}
+html .container .boy .body .shirt .balloons #two, body .container .boy .body .shirt .balloons #two {
+    top: 5px;
+    left: -20px;
+}
+html .container .boy .body .shirt .balloons #three, body .container .boy .body .shirt .balloons #three {
+    top: 20px;
+    left: -40px;
+}
+html .container .boy .body .shirt .balloons #four, body .container .boy .body .shirt .balloons #four {
+    top: 45px;
+    left: -85px;
+}
+html .container .boy .body .shirt .balloons #five, body .container .boy .body .shirt .balloons #five {
+    top: 50px;
+    left: -180px;
+}
+html .container .boy .body .shirt .balloons #dark-green, body .container .boy .body .shirt .balloons #dark-green {
+    top: 40px;
+    left: 30px;
+}
+html .container .boy .body .shirt .balloons .string, body .container .boy .body .shirt .balloons .string {
+    z-index: -1;
+    position: absolute;
+    width: 1px;
+    height: 140px;
+    background: #aaa;
+}
+html .container .boy .body .shirt .balloons #str-1, body .container .boy .body .shirt .balloons #str-1 {
+    transform: rotate(-17deg);
+    top: 110px;
+    left: 80px;
+}
+html .container .boy .body .shirt .balloons #str-2, body .container .boy .body .shirt .balloons #str-2 {
+    transform: rotate(-11deg);
+    top: 90px;
+    left: 85px;
+    height: 160px;
+}
+html .container .boy .body .shirt .balloons #str-3, body .container .boy .body .shirt .balloons #str-3 {
+    transform: rotate(-7deg);
+    top: 110px;
+    left: 95px;
+}
+html .container .boy .body .shirt .balloons #str-4, body .container .boy .body .shirt .balloons #str-4 {
+    transform: rotate(0deg);
+    top: 110px;
+    left: 100px;
+}
+html .container .boy .body .shirt .balloons #str-5, body .container .boy .body .shirt .balloons #str-5 {
+    transform: rotate(10deg);
+    top: 80px;
+    left: 110px;
+    height: 160px;
+}
+html .container .boy .body .shirt .balloons #str-6, body .container .boy .body .shirt .balloons #str-6 {
+    transform: rotate(18deg);
+    top: 80px;
+    left: 125px;
+    height: 160px;
+}
+html .container .boy .body .jeans, body .container .boy .body .jeans {
+    width: 70px;
+    height: 40px;
+    background-color: #464f02;
+    z-index: 100;
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: space-between;
+}
+html .container .boy .body .jeans .legs, body .container .boy .body .jeans .legs {
+    width: 40px;
+    height: 140px;
+    background-color: #4f5902;
+    position: relative;
+    top: 30px;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .boy .body .jeans #gap, body .container .boy .body .jeans #gap {
+    height: 5px;
+    width: 10px;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+html .container .boy .body .foot, body .container .boy .body .foot {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+html .container .boy .body .foot .shoes, body .container .boy .body .foot .shoes {
+    width: 30px;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    z-index: 300;
+    border-bottom-left-radius: 120% 100%;
+    border-bottom-right-radius: 120% 100%;
+}
+/* Thanks to Lütfü Can! */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(4deg);
+   }
+    100% {
+        transform: translateY(50) rotate(-4deg);
+   }
+}
+@keyframes flicker {
+    0% {
+        transform: skewX(5deg);
+        box-shadow: 0 0 17px 10px rgba(244, 231, 112, 0.71);
+   }
+    25% {
+        transform: skewX(-5deg);
+        box-shadow: 0 0 17px 5px rgba(244, 231, 112, 0.71);
+   }
+    50% {
+        transform: skewX(10deg);
+        box-shadow: 0 0 17px 7px rgba(244, 231, 112, 0.71);
+   }
+    75% {
+        transform: skewX(-10deg);
+        box-shadow: 0 0 17px 5px rgba(244, 231, 112, 0.71);
+   }
+    100% {
+        transform: skewX(5deg);
+        box-shadow: 0 0 17px 10px rgba(244, 231, 112, 0.71);
+   }
+}
